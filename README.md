@@ -30,14 +30,14 @@ yarn add --cwd packages/app "@qshift/plugin-quarkus-console"
 Next, customize the `packages/app/src/components/catalog/EntityPage.tsx` to include a new `<EntityLayout.Route...>`:
 ```typescript jsx
 import {
-    QuarkusPage,
+    QuarkusConsolePage,
 } from "@qshift/plugin-quarkus-console";
 ...
 const serviceEntityPage = (
   <EntityLayout>
   ...
     <EntityLayout.Route path="/quarkus" title="Quarkus">
-      <QuarkusPage />
+      <QuarkusConsolePage />
     </EntityLayout.Route>
 ```
 Start backstage, register a quarkus component including the following annotations
